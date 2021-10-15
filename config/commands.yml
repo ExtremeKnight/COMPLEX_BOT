@@ -1,0 +1,538 @@
+#                                                                   #
+#      _____                                           _            # 
+#     /  __ \                                         | |           # 
+#     | /  \/ ___  _ __ ___  _ __ ___   __ _ _ __   __| |___        # 
+#     | |    / _ \| '_ ` _ \| '_ ` _ \ / _` | '_ \ / _` / __|       # 
+#     | \__/\ (_) | | | | | | | | | | | (_| | | | | (_| \__ \       # 
+#      \____/\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|___/       # 
+#                                                                   # 
+#                                                                   #                                                         
+                                                        
+# This command file is where you can control all of the commands.
+# Here you can disable commands, fine control permissions, and set aliases.
+
+## Tutorial
+  
+#  Below is an example of a command. If you do not specify a command here, we will
+#  use the default options.
+
+#  If you want everyone to have access to a command use '@everyone' as the role (NOTE: the '' must be included!)
+
+example1:           #  The commands name
+  enabled: True     #  Enabled/Disabled (required) (default: True)
+  permissions:      #  Roles with permissions to use this command (optional) (default: '@everyone')
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+         
+  aliases:          #  Command aliases that can also be used to run the command (optional) (default: NONE)
+   - eg
+   - eg1
+
+example2:
+  enabled: True
+  permissions:
+    - '@everyone'
+  aliases:
+    - eg2
+
+
+
+##########################################
+#              Giveaways                 #
+##########################################
+
+gcreate:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+gdelete:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+gend:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+greroll:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+
+##########################################
+#               Economy                  #
+##########################################
+
+bal:
+  enabled: True
+  aliases:
+    - balance
+buy:
+  enabled: True
+deposit:
+  enabled: True
+shop:
+  enabled: True
+top:
+  enabled: True
+withdraw:
+  enabled: True
+work:
+  enabled: True
+  
+##########################################
+#             Fun & Games                #
+##########################################
+
+8ball:
+  enabled: True
+  aliases:
+    - eightball
+asciiart:
+  enabled: True
+avatar:
+  enabled: True
+fact:
+  enabled: True
+flip:
+  enabled: True
+hug:
+  enabled: True
+joke:
+  enabled: True
+meme:
+  enabled: True
+numbergen:
+  enabled: True
+poll:
+  enabled: True
+rate:
+  enabled: True
+roll:
+  enabled: True
+rps:
+  enabled: True
+slap:
+  enabled: True
+fotd:
+  enabled: True
+xmas:
+  enabled: True
+
+##########################################
+#             Moderation                 #
+##########################################
+
+ban:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+banlist:
+  enabled: True
+clear:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+history:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+  aliases:
+    - infractions
+kick:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+lockdown:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+mute:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+report:
+  enabled: True 
+say:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+shout:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+slowmode:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+speak:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+tempmute:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+unban:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+unmute:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+unwarn:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+warn:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+warnings:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+
+##########################################
+#                Music                   #
+##########################################
+
+leave:
+  enabled: True
+  aliases:
+    - stop
+pause:
+  enabled: True
+play:
+  enabled: True
+queue:
+  enabled: True
+resume:
+  enabled: True
+search:
+  enabled: True
+skip:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+volume:
+  enabled: True
+  aliases:
+    - vol
+voteskip:
+  enabled: True
+
+##########################################
+#               Tickets                  #
+##########################################
+
+add:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+close:
+  enabled: True
+delete:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+forcedelete:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+lower:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+new:
+  enabled: True
+notice:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+raise:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+remove:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+reopen:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+ticketpanel:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+transcript:
+  enabled: True
+voiceticket:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+
+##########################################
+#              Utilities                 #
+##########################################
+
+addrole:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+announce:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+apply:
+  enabled: True
+bot:
+  enabled: True
+botlinks:
+  enabled: True
+botstats:
+  enabled: True
+bugreport:
+  enabled: True
+channelinfo:
+  enabled: True
+decode:
+  enabled: True
+donate:
+  enabled: True
+encode:
+  enabled: True
+help:
+  enabled: True
+hexcolour:
+  enabled: True
+invites:
+  enabled: True
+latency:
+  enabled: True
+links:
+  enabled: True
+lmgtfy:
+  enabled: True
+ping:
+  enabled: True
+pwdgen:
+  enabled: True
+removerole:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+roleinfo:
+  enabled: True
+rr:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+serverinfo:
+  enabled: True
+snipe:
+  enabled: True
+social:
+  enabled: True
+suggest:
+  enabled: True
+toascii:
+  enabled: True
+topinvites:
+  enabled: True
+usercount:
+  enabled: True
+userinfo:
+  enabled: True
+verifypanel:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+weather:
+  enabled: True
+
+##########################################
+#                Levels                  #
+##########################################
+
+leaderboard:
+  enabled: True
+level:
+  enabled: True
+xpadd:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+xpremove:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+xpreset:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+xpset:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+
+##########################################
+#               Management               #
+##########################################
+
+reload:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+setprefix:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+setstatus:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+setstatustype:
+  enabled: True
+  permissions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+# The below commands are set to owner only.
+setup:
+  enabled: True
+update:
+  enabled: True 

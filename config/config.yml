@@ -1,0 +1,359 @@
+
+#----------------------------------------------------------------#
+#                            SETUP                               #
+#----------------------------------------------------------------#
+
+setup:
+
+  # When setting up your bot, enter the bots token and your server ID below
+  token: "NTE5MjEwMDY0ODAwOTA3Mjg0.XAVuDQ.CjzGbIJAL5gG4TEAx2QaPHD-XEU"
+  serverID: "896591915791818792" # Speech marks ("") must be used in v1.5.2+
+
+#----------------------------------------------------------------#
+#                          SETTINGS                              #
+#----------------------------------------------------------------#
+
+# Change the main settings of the bot.
+
+colour: "000000"
+prefix: "c?"
+
+# Change bot branding.
+
+serverName: "C O M P L E X | M U L T I - P U R P O S E | S E R V E R"
+botName: "ComplexMC"
+footer: "©ComplexMC | Owned by NASH | Developed by Nash"
+
+statusMessage: "c?help"
+# Types : PLAYING, STREAMING, LISTENING or WATCHING
+statusType: "PLAYING"
+
+liveConsoleLog: True
+
+# Pick a channel for commands to be ran in - leave empty for any channel
+# Example: ["bot-commands", "general"]
+commandChannels: []
+# Commands that ignore the command channel
+bypassCommands: ["gcreate", "gend", "gdelete", "greroll", "add", "remove", "lower", "raise", "close", "reopen",
+                 "delete", "forcedelete", "ticketpanel", "transcript", "voiceticket", "clear", "slowmode", "lockdown", "announce"]
+
+# Add ID's of users who will not be able to use
+# the bots commands. e.g. 227937678779294380
+blackList: []
+
+#----------------------------------------------------------------#
+#                          FEATURES                              #
+#----------------------------------------------------------------#
+
+# Disable or enable core functions of the bot.
+
+enabledFeatures:
+  fun: True
+  moderation: True
+  tickets: True
+  utilities: True
+  giveaways: True
+  economy: True
+  levels: True
+  music: True
+
+#----------------------------------------------------------------#
+#                        JOIN / LEAVE                            #
+#----------------------------------------------------------------#
+
+# Edit welcome and leave messages
+
+autoRoles:
+  - "Visitor"
+
+joinMessage: True
+joinChannel: "👋│welcome-goodbye"
+welcomeMsg: "We hope you enjoy your stay!"
+
+leaveMessage: True
+leaveChannel: "👋│welcome-goodbye"
+leaveMsg: "They will be missed."
+showRolesInLeaveMessage: True
+
+# Enable and use the verifiction system
+
+verificationSystem: True
+verificationRole: "Members"
+verificationChannel: "👋│introduction"
+verifyPanelEmoji: "✅"
+
+#----------------------------------------------------------------#
+#                      ROLES / CHANNELS                          #
+#----------------------------------------------------------------#
+
+# Change the bot's core roles
+
+mutedRole: "Muted"
+
+# Add roles of people who can do the following:
+
+viewVerifyChannel:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+talkInVerifyChannel:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+viewLogsChannel:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+exemptFromPunishments:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+
+
+# Change the bot's core channels
+
+logChannel: "💫│message-logs"
+reportChannel: "💫│message-logs"
+bugChannel: "💫│message-logs"
+
+#----------------------------------------------------------------#
+#                          TICKETS                               #
+#----------------------------------------------------------------#
+
+# Toggle & edit the ticket system
+
+ticketCategory: "▬▬SUPPORT▬▬"
+ticketPanelEmoji: "🎟️"
+maxTicketsPerUser: 1
+dmTicketTranscripts: True
+
+# Add roles of people who can do the following:
+
+canSeeTicket:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+canSeeRaisedTicket:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+canSeeClosedTicket:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+enableCategories: False
+ticketCategories:
+  - name: "Sales"
+    emoji: "💰"
+    category: "sales"
+    roles:
+      - "Founder"
+      - "Co-Founder"
+      - "Admin"
+      - "Moderator"
+  - name: "Other"
+    emoji: "🎟️"
+    category: "tickets"
+    roles:
+      - "Founder"
+      - "Co-Founder"
+      - "Admin"
+      - "Moderator"
+#----------------------------------------------------------------#
+#                         APPLICATIONS                           #
+#----------------------------------------------------------------#
+
+# Set application questions
+
+applicationSystem: True
+applicationCategory: "▬▬SUPPORT▬▬"
+applicationChannel: "📝│application"
+applicationPosition: "Helper"
+applicationQuestions:
+  - "Question 1?"
+  - "Question 2?"
+  - "Question 3?"
+
+canSeeApplication:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+
+
+
+
+#----------------------------------------------------------------#
+#                          ECONOMY                               #
+#----------------------------------------------------------------#
+
+# Change economy settings
+
+economy:
+  currency: "$"
+  workCooldown: 300000
+
+  jobs: [
+    # Title, Min Pay, Max Pay
+    ["engineer", 0, 400],
+    ["constructor", 0, 400],
+    ["cook", 0, 400],
+    ["technician", 0, 400],
+    ["police", 0, 400],
+    ["doctor", 0, 400]
+  ]
+
+  roleShop: [
+    # Role, Cost
+    ["Bronze", 4000],
+    ["Silver", 5500],
+    ["Gold", 7000]
+  ]
+
+#----------------------------------------------------------------#
+#                          OTHER                                 #
+#----------------------------------------------------------------#
+
+# Levels
+
+# Enable and edit the leveling system
+
+levelSystem: True
+
+# Pick which channel to send level up
+# messages to, or use set to blank "" to be the
+# current channel
+levelChannel: "💫│level-logs"
+
+levelCoolDown: 30000
+levelMaxPoints: 15
+
+# Invites
+
+inviteSystemEnabled: True
+
+# Suggestions
+
+replyToSuggestions:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+suggestionChannel: "💫│suggestions"
+
+suggestions:
+  accept: "✅"
+  deny: "❎"
+  upvote: "👍"
+  downvote: "👎"
+
+# Giveaways
+
+giveaways:
+  botsCanWin: False
+  ignoreIfHasPermission: []
+  reaction: "🎉"
+
+# YouTube
+
+youtubeUpdatesSystemEnabled: True
+youtubeChannelIds:
+  - "UCshwRhftzkiov5wKR7M_LsQ"
+youtubeUpdatesChannel: "▶│youtube"
+
+#----------------------------------------------------------------#
+#                            LINKS                               #
+#----------------------------------------------------------------#
+
+# Edit your server social links
+
+social:
+  facebook:
+  twitter:
+  instagram:
+  youtube:
+  twitch:
+
+online:
+  website:
+  forums:
+  donate:
+
+#----------------------------------------------------------------#
+#                          FILTERS                               #
+#----------------------------------------------------------------#
+
+# Swear Filter
+
+swearFilterEnabled: True
+swearWords: ["fuck","shit","piss","dick","fucker","cock","cunt","bitch","whore","arse",
+            "bastard","wanker","bullshit","nigger","slut","choad","chode"]
+swearBypassRoles:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+swearBypassChannels:
+  - "💫│message-logs"
+
+
+# Invite Filter
+
+inviteFilterEnabled: True
+inviteBypassRoles:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+inviteBypassChannels:
+  - "💫│message-logs"
+
+# Antispam Filter
+
+antiSpamEnabled: True
+antispamMessageLimit: 5
+antispamTimeLimit: 100000
+antiSpamMuteTime: 30000
+spamBypassRoles:
+  - "Founder"
+  - "Co-Founder"
+  - "Admin"
+  - "Moderator"
+spamBypassChannels:
+  - "💫│message-logs"
+
+#----------------------------------------------------------------#
+#                            IMAGES                              #
+#----------------------------------------------------------------#
+
+# Edit the GIFS that the bot displays.
+
+slap:
+  - "https://media.giphy.com/media/TA9NZjiqCIOTC/giphy.gif"
+  - "https://media.giphy.com/media/xT8qB7Sbwskk27Rdy8/giphy.gif"
+  - "https://media.giphy.com/media/lX03hULhgCYQ8/giphy.gif"
+  - "https://media.giphy.com/media/u8maN0dMhVWPS/giphy.gif"
+  - "https://media.giphy.com/media/l41lZEoYn6z1uc2fS/giphy.gif"
+
+hug:
+  - "https://media.giphy.com/media/EvYHHSntaIl5m/giphy.gif"
+  - "https://media.giphy.com/media/QbkL9WuorOlgI/giphy.gif"
+  - "https://media.giphy.com/media/yidUzriaAGJbsxt58k/giphy.gif"
+  - "https://media.giphy.com/media/roVZxEfHaVCWA/giphy.gif"
+  - "https://media.giphy.com/media/vTtibSrt4dlIc/giphy.gif"
+
+#----------------------------------------------------------------#
+#                          ADVANCED                              #
+#----------------------------------------------------------------#
+
+# Do not change unless you know what your doing
+
+debugMode: False
+

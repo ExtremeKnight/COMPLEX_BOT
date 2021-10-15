@@ -1,0 +1,177 @@
+
+#                                                                                       #  
+#                     _          _____                                                  #  
+#          /\        | |        |  __ \                                                 #  
+#         /  \  _   _| |_ ___   | |__) |___  ___ _ __   ___  _ __  ___  ___  ___        #  
+#        / /\ \| | | | __/ _ \  |  _  // _ \/ __| '_ \ / _ \| '_ \/ __|/ _ \/ __|       #  
+#       / ____ \ |_| | || (_) | | | \ \  __/\__ \ |_) | (_) | | | \__ \  __/\__ \       #  
+#      /_/    \_\__,_|\__\___/  |_|  \_\___||___/ .__/ \___/|_| |_|___/\___||___/       #  
+#                                               | |                                     #  
+#                                               |_|                                     #  
+#                                                                                       #  
+#                                                                                       # 
+
+## Tutorial
+
+
+
+about:
+  trigger: ComplexMC
+  deleteTrigger: True
+  response:
+    embed:
+      title: What is ComplexMC?
+      description: ComplexMC is a Multi-Purpose Company. We offer alot of services. A minecraft studio, made up of people from various parts of the world with different talents, we have a Map Makers service, Server Configuration, among other things.
+      colour: FF0062
+      fields:
+        - title: Why do you choose ComplexMC?
+          message: Because not only we have this many services but we also offer it for affordable prices, and we can also provide you a test server so you can test the performance out.
+          inline: True    
+        - title: Fast/Good Support
+          message: We provide a fast/good support for me (communication = key) to all things especially for customers.
+        - title: Proffestional Behaviour
+          message: We will do our best to keep having this kind of behaviour (immatured staffs can be demoted) just report if you have seen one (provide proofs)
+          inline: True
+        - title: Fast Services
+          message: Our Minecraft Builts Store is for the people who are looking to get a high quality build instantly, without going through the process of getting one made.In our builts store, you can simply view our catalog and purchase a build which you love the most!
+          inline: True
+        - title: Don't have money to buy/hire services? 
+          message: At ComplexMC we care about our followers who do not yet have the budget to purchase a build from our online store, so we have created a discord where the entire discord community can join and enjoy some free maps made for everyone, and the best , WHITHOUT ADS!
+          inline: True
+        - title: Service Price
+          message: We are doing our best to keep the prices affordable as we can so that the "members" can afford our services.
+          inline: True
+        - title: Building Services
+          message: Hub/Lobby, Server Spawn, Modern House, Medieval House, Custom Builds price depends on your request
+          inline: True
+        - title: Hosting Services
+          message: Minecraft Hosting, Discord-Bot Hosting, Game Hosting                 
+          inline: True    
+        - title: Minecraft Services
+          message: Plugin Config/Setup, Server Setups, Maps&Schematics                
+          inline: True    
+
+# Example 2 - Embed Message
+
+hosting-service:                                           #  A unique name for the auto response
+  trigger: Discord Plans                         #  The message the user must send for the response to be initiated
+  deleteTrigger: True                               #  Delete the trigger message after the user has been sent (True/False)
+  response:                                         #  The response to the user should be:
+    embed:                                          #  An embed with the following:
+      title: Discord Bot Hosting                            #  Title (optional)
+      description:                 #  Description (optional)
+      colour: FF0062                                #  Colour (optional)
+      footer:                                       #  Footer with:  (optional)
+        message: complexmc@copyright 2021                       #    Message (required for footer)
+        icon:        #    Icon (optional)
+      author:                                       #  Author with:  (optional)
+        message: ComplexMC                       #    Message (required for author)
+        icon:          #    Icon (optional)
+        url:                      #    URL (optional)
+      image:           #  Image (optional)
+      thumbnail:       #  Thumbnail (optional)
+      timestamp: True                               #  Timestamp (optional) (True/False)
+      url:                  #  URL (optional)
+      fields:                                       #  Fields:  (optional)
+        - title: Small Discord Bot                      #   Title (required for fields)
+          message: 256MB DDR4 Ram, 1GB SSD Storage, 1 Databases - $1.00/month                  #   Message (required for fields)
+          inline: True                              #   Inline (optional)
+        - title: Medium Discord Bot                      #   Title (required for fields)
+          message: 512MB DDR4 Ram, 1GB SSD Storage, 2 Database, $2.00/month                  #   Message (required for fields)
+          inline: True                              #   Inline (optional)
+        - title: Large Discord Bot                      #   Title (required for fields)
+          message: 1GB DDR4 Ram, 1.5GB SSD Storage, 5 Database, $3.00/month                  #   Message (required for fields)
+          inline: True                              #   Inline (optional)
+
+# All fields marked optional, that you don't want to use, can be deleted.
+# For example, a very basic embed could be:
+
+minecraft-services:
+  trigger: Minecraft Plans                         #  The message the user must send for the response to be initiated
+  deleteTrigger: True                               #  Delete the trigger message after the user has been sent (True/False)
+  response:                                         #  The response to the user should be:
+    embed:                                          #  An embed with the following:
+      title: Minecraft Hosting Plans                            #  Title (optional)
+      description:                 #  Description (optional)
+      colour: FF0062                                #  Colour (optional)
+      footer:                                       #  Footer with:  (optional)
+        message: complexmc@copyright 2021                       #    Message (required for footer)
+        icon:        #    Icon (optional)
+      author:                                       #  Author with:  (optional)
+        message: ComplexMC                       #    Message (required for author)
+        icon:          #    Icon (optional)
+        url:                      #    URL (optional)
+      image:           #  Image (optional)
+      thumbnail:       #  Thumbnail (optional)
+      timestamp: True                               #  Timestamp (optional) (True/False)
+      url:                  #  URL (optional)
+      fields:                                       #  Fields:  (optional)
+        - title: Standard Minecraft Plan - $2.75/month                       #   Title (required for fields)
+          message: 2GB DDR4 Ram, 1vCore, 2 Backups, 15GB SSD Storage, Unlimited Slots, MySQL Database                  #   Message (required for fields)
+          inline: True                              #   Inline (optional)
+        - title: Pro Minecraft Plan - $4.65/month                      #   Title (required for fields)
+          message: 4GB DDR4 Ram, 2 vCore, 3 Backups, 20GB SSD Storage, Unlimited Slots, MySQL Database                  #   Message (required for fields)
+          inline: True                              #   Inline (optional)
+        - title: Superior Minecraft Plan - $6.25/month                      #   Title (required for fields)
+          message: 6gb DDR4 Ram, 3vCore, 3 Backups, 30GB SSD Storage, Unlimited Slots, MySQL Database                  #   Message (required for fields)
+          inline: True                              #   Inline (optional)
+        - title: Ultimate Minecraft Plan - %8.40/month                      #   Title (required for fields)
+          message: 8GB DDR4 Ram, 4 vCore, 3 Backups, 35 GB SSD Storage, Unlimited Slots, MySQL Database                  #   Message (required for fields)
+          inline: True 
+
+hosting-services:
+  trigger: Hosting                         #  The message the user must send for the response to be initiated
+  deleteTrigger: True                               #  Delete the trigger message after the user has been sent (True/False)
+  response:                                         #  The response to the user should be:
+    embed:                                          #  An embed with the following:
+      title: ComplexMC Hosting Services                            #  Title (optional)
+      description:                 #  Description (optional)
+      colour: FF0062                                #  Colour (optional)
+      footer:                                       #  Footer with:  (optional)
+        message: complexmc@copyright 2021                       #    Message (required for footer)
+        icon:        #    Icon (optional)
+      author:                                       #  Author with:  (optional)
+        message: ComplexMC                       #    Message (required for author)
+        icon:          #    Icon (optional)
+        url:                      #    URL (optional)
+      image:           #  Image (optional)
+      thumbnail:       #  Thumbnail (optional)
+      timestamp: True                               #  Timestamp (optional) (True/False)
+      url:                  #  URL (optional)
+      fields:                                       #  Fields:  (optional)
+        - title: Minecraft Hosting                      #   Title (required for fields)
+          message: Starts with $1                  #   Message (required for fields)
+          inline: True                              #   Inline (optional)
+        - title: Discord-Bot Hosting                      #   Title (required for fields)
+          message: Starts with 1$                  #   Message (required for fields)
+          inline: True                              #   Inline (optional)
+        - title: Ark Survival - Evolved                      #   Title (required for fields)
+          message: $0.50/slot                  #   Message (required for fields)
+          inline: True                              #   Inline (optional)
+        - title: Rust                      #   Title (required for fields)
+          message: $0.20/slot                  #   Message (required for fields)
+          inline: True
+        - title: DayZ - Standalone                      #   Title (required for fields)
+          message: $0.80/slot                  #   Message (required for fields)
+          inline: True                              #   Inline (optional)
+        - title: ARMA III                      #   Title (required for fields)
+          message: $0.50/slot                  #   Message (required for fields)
+          inline: True
+        - title: Counter-Strike | GO                      #   Title (required for fields)
+          message: $0.50/slot                  #   Message (required for fields)
+          inline: True                              #   Inline (optional)
+        - title: Hytale                      #   Title (required for fields)
+          message: $1/gb                  #   Message (required for fields)
+          inline: True
+        - title: Garry's Mod                      #   Title (required for fields)
+          message: $0.50/slot                  #   Message (required for fields)
+          inline: True                              #   Inline (optional)
+        - title: Valheim
+          message: $1.40/slot
+          inline: True
+
+## Key Points To Note:
+
+#  -  Fields 'trigger', 'deleteTrigger' and 'response' are always required.
+#  -  The name of the auto response (e.g. 'example3') must be unique.
+#  -  Response can only contain 'message' or 'embed'.                      
